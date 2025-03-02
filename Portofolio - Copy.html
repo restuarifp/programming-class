@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Rahadian</title>
+
+<style>
+
+body {
+	font-family: Arial;
+	margin: 0px;
+	padding: 0;
+}
+
+	.buttonmaster {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+	
+	
+h1 {
+	color: Black;
+	font-size: 36px;
+	text-align: left;
+	margin-left: 10px;
+}
+
+
+h2 {
+	color: black;
+	font-size: 30px;
+	text-align: left;
+}
+
+	.namabaru{
+      color: black;
+      	font-size: 30px;
+	      text-align: left;
+	}
+
+h3 {
+	color: black;
+	font-size: 18px;
+	text-align: left;
+}
+
+.SpecialText1{
+	font-family: cursive;
+	font-style: italic;
+}
+
+.SpecialText2{
+	font-family: monospace;
+	font-style: italic;
+}
+
+nav {
+	background-color: #333;
+	padding: 10px;
+	text-align: left;
+}
+
+	nav a {
+		color: white;
+		text-decoration: none;
+		padding: 10px 25px;
+		display: inline-block;
+	}
+
+	nav a:hover {
+
+	background-color: #555;
+
+	}
+
+		
+	section {
+		padding: 10px;
+		}
+	
+</style>
+
+</head>
+
+<body>
+
+	<h1>R A H A D I A N</h1>
+
+<nav>
+	<a href="#about">About Me</a>
+	<a href="#skills">Skills</a>
+	<a href="#project">Project</a>
+	<a href="#recommendation">Recommendation</a>
+</nav>
+
+<section id="about">
+	<h2> About Me</h2>
+
+	<img src = "fotorahadian.jpg" alt=PersonalPhoto>
+
+	<h3> Hallo, my name is Rahadian. I am a 
+	<br> professional content and creative writer with 
+	<br> experience in the field since 2014.
+	<br> Additionally also a full stack developer
+	<br> and a music composer.</h3>
+</section>
+
+<section id="skills">
+	<h2>Skills</h2>
+	
+	<h3>1. Content Writing <br>
+		<img src = "ContentWriter.jpg" alt=PersonalPhoto>
+		<br>
+	<br>2. Journalism <br>
+		<img src = "Journalism.jpg" alt=JournalismPhoto>
+		<br>
+		<img src = "PlayingGuitar.jpg" alt=PlayingGuitarPhoto>
+	<br>3. Music Composing
+		
+	
+	</h3>
+</section>
+
+
+<section id="SpecialText1">
+	<h2>Projects</h2>
+	<p class="SpecialText1">
+
+	 	1. Articles for Puncak Bukit Blog (2014 - 2019),
+	<br>2. Articles for Terminal Mojok (2019 - 2022),
+	<br>3. Articles for Froyononion - Gen Z web site (2023).
+	</p>
+
+</section>
+	
+<section id="recommendation">
+	<h2>Recommendation</h2>
+
+		<ul id="RecommendationList" class="SpecialText2">
+
+			<li> Darwin Laksono - Chef Froyonion    082166748733 </li>
+				<li>	Tina Gusty - Editor Puncak Bukit   083216642193 </li>
+				<li>	Nur Anissa - Editor Pikiran Rakyat 089513248123 </li>
+	
+
+</section>
+
+		
+	<script>
+	
+	  function IsiNama(){
+	  	var namabaru = prompt("Please Insert your name, your company, your position, and your phone number for recommendation")
+	   
+	  	if (namabaru && namabaru.trim() !== "")
+	  	{
+	       alert("Thank for submitting recommendation")
+	  		    var li = document.createElement("li");
+	   	    li.textContent = namabaru;
+	  		     document.getElementById("RecommendationList").appendChild(li);
+	      }
+	  }
+	
+	</script>
+	
+	<button class="buttonmaster" onclick = "IsiNama()">Add New Recommendation</button>
+<button class="buttonmaster" onclick = "window.scrollTo({top:0, behavior:'smooth'});">Home</button>
+	
+<br> <br> <br> 
+
+<h3>ABC Solution, Seattle</h3>
+
+</body>
+
+</html>
