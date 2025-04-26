@@ -17,4 +17,5 @@ class Botol {
  var Minumsaya = new Botol ();
  Minumsaya.warna = "bening"
  Minumsaya.merek = "pepsi"
- Minumsaya.kapasitasML = "250"
+ Minumsaya.kapasitasMl = "250"
+ console.log(Minumsaya)
