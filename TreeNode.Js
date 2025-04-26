@@ -2,8 +2,8 @@ class TreeNode {
   constructor(value) {
     this.value = value;
     this.left = null;
-    this.right = null
-      }
+    this.right = null;
+  }
 }
 
 class BinarySearchTree {
@@ -22,14 +22,12 @@ class BinarySearchTree {
 
   _insertNode(node, newNode) {
     if (newNode.value < node.value) {
-      
       if (node.left === null) {
         node.left = newNode; 
       } else {
         this._insertNode(node.left, newNode); 
       }
     } else {
-     
       if (node.right === null) {
         node.right = newNode; 
       } else {
@@ -38,7 +36,6 @@ class BinarySearchTree {
     }
   }
 
- 
   find(value) {
     return this._findNode(this.root, value); 
   }
@@ -48,14 +45,14 @@ class BinarySearchTree {
       return false; 
     }
     if (value === node.value) {
-      return true;
+      return true; 
+    }
     return value < node.value
       ? this._findNode(node.left, value) 
       : this._findNode(node.right, value); 
   }
 
-  
-  inOrderTraversal(node = this.root, result = []) 
+  inOrderTraversal(node = this.root, result = []) {
     if (node) {
       this.inOrderTraversal(node.left, result); 
       result.push(node.value); 
@@ -64,7 +61,6 @@ class BinarySearchTree {
     return result;
   }
 
- 
   preOrderTraversal(node = this.root, result = []) {
     if (node) {
       result.push(node.value); 
@@ -74,7 +70,6 @@ class BinarySearchTree {
     return result; 
   }
 
- 
   postOrderTraversal(node = this.root, result = []) {
     if (node) {
       this.postOrderTraversal(node.left, result); 
@@ -83,7 +78,6 @@ class BinarySearchTree {
     }
     return result; 
   }
-
 
   bfs() {
     const result = [];
@@ -105,18 +99,16 @@ class BinarySearchTree {
   }
 }
 
-
 const bst = new BinarySearchTree();
-bst.insert(10)
-bst.insert(5)
-bst.insert(15)
-bst.insert(2)
-bst.insert(7)
-bst.insert(12)
+bst.insert(10);
+bst.insert(5);
+bst.insert(15);
+bst.insert(2);
+bst.insert(7);
+bst.insert(12);
 bst.insert(17);
+
 console.log("BST:", bst);
-console.log("Find 7:", bst.find(7));
-console.log("Find 100:", bst.find(100));
-console.log("In-order:", bst.inOrderTraversal());
-
-
+console.log("Find 7:", bst.find(7)); // Should return true
+console.log("Find 100:", bst.find(100)); // Should return false
+console.log("In-order:", bst.inOrderTraversal()); // Should return [2, 5, 7, 10, 12, 15, 17]
