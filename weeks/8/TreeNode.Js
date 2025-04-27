@@ -109,6 +109,8 @@ bst.insert(12);
 bst.insert(17);
 
 console.log("BST:", bst);
-console.log("Find 7:", bst.find(7)); // Should return true
-console.log("Find 100:", bst.find(100)); // Should return false
-console.log("In-order:", bst.inOrderTraversal()); // Should return [2, 5, 7, 10, 12, 15, 17]
+console.log("Find 7:", bst.find(7)); 
+console.log("Find 100:", bst.find(100)); 
+console.log("In-order:", bst.inOrderTraversal()); 
+console.log("Pre-order:", bst.preOrderTraversal());
+console.log("Post-order:", bst.postOrderTraversal());
