@@ -2,7 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 const Images = [
-'https://assets.pikiran-rakyat.com/crop/0x131:1027x817/157x94/webp/photo/2022/09/25/1515576310.jpg'
+'https://assets.pikiran-rakyat.com/crop/0x131:1027x817/157x94/webp/photo/2022/09/25/1515576310.jpg',
+'https://assets.pikiran-rakyat.com/crop/0x0:0x0/157x94/webp/photo/2025/05/03/1848998947.jpg',
+'https://assets.pikiran-rakyat.com/crop/0x0:0x0/157x94/webp/photo/2025/05/03/1084466508.jpg',
 ]
 
   
