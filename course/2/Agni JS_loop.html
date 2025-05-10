@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>	
+	<body>		
+		<h1>JavaScript Variables</h1>		
+		<p>In this example, x, y, and z are undeclared.</p>		
+		<p>They are automatically declared when first used.</p>		
+		<p id="demo"></p>	
+        <ul id="trending"></ul>
+	</body>    
+	<script>        
+       
+	var trending = [          
+	{              
+	judul: 'A',              
+    link: 'https://google.com'          
+    },          
+    {               
+    judul: 'B',              
+    link: 'https://google.com'          
+    },          
+    {               
+    judul: 'C',              
+    link: 'https://google.com'          
+    },        
+    ]	
+    let list =
+    document.getElementById("trending");
+    document.getElementById('demo').innerHTML = `
+          <ul>
+              ${
+	trending.map
+((item) => `
+                  <li>
+                      <a href="${
+item.link
+}">${item.judul}</a>
+                  </li>
+              `).join('')}
+          </ul>
+      ` 
+   
+    </script>
+</html>
